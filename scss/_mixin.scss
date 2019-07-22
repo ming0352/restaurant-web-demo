@@ -1,0 +1,10 @@
+/*CSS中插入圖片*/
+@mixin add-pic{
+background-image: url('');	
+}
+/*圖片取代文字*/
+@mixin hidetext{
+	text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
