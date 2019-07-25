@@ -3,31 +3,107 @@
 @import "mixin";
 
 @include reset;
-.header h1 a{
-background-image: url('../images/logo_w@svg.svg');
-width: 120px;
-height: 24px;
-background-size: contain;
- display: block;
- float: left;
- @include hidetext;
- margin: 15px 10px 15px 10px;
+
+.header h1 a {
+    background-image: url('../images/logo_w@svg.svg');
+    width: 120px;
+    height: 24px;
+    background-size: contain;
+    display: block;
+    float: left;
+    @include hidetext;
+    margin: 15px 10px 15px 10px;
 }
-.header ul li{
-	display: block;
-	float: right;
-	padding: 20px 15px 20px 15px;
-	margin-right: 10px;
-	
-}
-.header a{
-text-decoration: none;
-color: white;
-font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif;
-cursor: pointer;
+
+.header ul li {
+    display: block;
+    float: right;
+    padding: 20px 15px 20px 15px;
+    margin-right: 10px;
 
 }
-.menu.active{
-	border-bottom: solid 5px orange;
-	 font-weight: bold;
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif;
+    cursor: pointer;
+
+}
+
+.option.active {
+    border-bottom: solid 5px orange;
+    font-weight: bold;
+    background: rgba(188,188,188,0.2);
+}
+
+.burger {
+    display: none;
+
+}
+.bg{
+	background: rgba(0,0,0,0.2); 
+	text-align: center;
+	position: absolute;
+	top: 30%;
+left: 25%;
+right: 25%;
+	
+	
+	
+}
+.bg h2{
+	font-size: 36px;
+	font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+.bg p{
+	color: white;
+	font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif;
+}
+.bg div{
+padding-bottom:  20px;
+}
+
+@media(max-width: 767px) {
+    .burger {
+        font-size: 30px;
+        margin-top: 15px;
+        display: block;
+        float: right;
+        margin-right: 10px;
+    }
+
+    .menu {
+        max-height: 0px;
+        overflow: hidden;
+        /*因高度為0，文字會溢出，故需增加此語法隱藏*/
+        transition: max-height 0.5s;
+        /*margin-top: 1px;*/
+        position: absolute;
+        z-index: 100;
+        top: 50px;
+        left: 0;
+        right: 0;
+          background: rgba(0,0,0,0.8);
+
+    }
+
+    .menu li {
+        border-bottom: 5px solid transparent;
+    }
+
+    .menu li a {
+        transition: all 0s;
+    }
+
+    
+    /*jQ點擊後動態在 body 加上 class */
+    .show .menu {
+        max-height: 500px;
+    }
+    .header ul li{
+    float: none;
+    }
 }
