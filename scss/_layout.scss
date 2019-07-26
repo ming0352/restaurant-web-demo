@@ -1,24 +1,30 @@
 .wrap{
-	max-width: 900px;
+	max-width: 100%;
 	margin: 0 auto;
+	font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif;
 }
 .header{
 	background-image: url('../images/header_desktop.png');
-height: 420px;
+min-height: 420px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
 position: relative;
 }
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
 	.header{
 		background-image: url('../images/Bitmap.png');
-
+        
 	}
 }
-@media (max-width: 367px){
+@media screen and (max-width: 367px){
 	
 }
-@media (max-width: 320px){
+@media screen and (max-width: 320px){
 	
 }
+
 .footer{
+
 
 }
