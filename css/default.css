@@ -15,7 +15,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative; }
+  position: relative;
+  margin-top: -30px; }
 
 @media screen and (max-width: 767px) {
   .header {
@@ -359,7 +360,7 @@ h5 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0px 30px 50px 30px; }
+  padding-right: 5px; }
 
 .box p {
   margin-left: 127px; }
@@ -421,18 +422,30 @@ h6 {
   justify-content: center;
   padding-bottom: 50px; }
 
+.location iframe {
+  margin: 0px 30px 10px 30px; }
+
+.input {
+  width: 400px; }
+
 @media screen and (max-width: 767px) {
   .loc {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .location iframe {
-    max-width: 100%; } }
+  .input {
+    width: 350px; } }
 
-.location iframe {
-  margin: 0px 30px 10px  30px; }
+@media screen and (max-width: 413px) {
+  .input {
+    width: 300px; } }
 
-.input {
-  width: 450px; }
+@media screen and (max-width: 374px) {
+  .input {
+    width: 280px; } }
+
+@media screen and (max-width: 320px) {
+  .input {
+    width: 250px; } }
 
 .keyin {
   color: brown;
@@ -446,7 +459,8 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 20px 30px 0px 30px; }
+  padding: 20px 0px 0px 0px;
+  margin-right: 20px; }
 
 .checkbox {
   display: -webkit-box;
@@ -482,10 +496,3 @@ h6 {
     flex-direction: column;
     
 }*/
-.button-success,
-.button-error,
-.button-warning,
-.button-secondary {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }

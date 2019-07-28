@@ -309,6 +309,7 @@ h5 {
     flex-wrap: wrap;
 }
 
+
 .suggest * {
     color: brown;
 }
@@ -331,7 +332,8 @@ h5 {
     display: flex;
     align-item: flex-start;
     flex-direction: column;
-    margin: 0px 30px 50px 30px;
+    padding-right: 5px;
+
 }
 
 .box p {
@@ -374,7 +376,7 @@ h6 {
     font-weight: bold;
     text-align: center;
     font-size: 24px;
-padding-top: 30px;
+    padding-top: 30px;
 }
 
 .location {
@@ -385,22 +387,55 @@ padding-top: 30px;
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-    
+
 }
-@media screen and(max-width: 767px) {
-    .loc{
-        flex-wrap: wrap;
-    }
-    .location iframe{
-        max-width: 100%;
-    }
-}
+
 .location iframe {
-    margin: 0px 30px 10px  30px;
+    margin: 0px 30px 10px 30px;
 }
 .input {
-    width: 450px;
+    width: 400px;
 }
+
+@media screen and(max-width: 767px) {
+    .loc {
+        flex-wrap: wrap;
+    }
+.input {
+    width: 350px;
+}
+    
+}
+
+
+
+@media screen and (max-width: 413px) {
+    
+
+    .input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .input {
+        width: 280px;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .input {
+        width: 250px;
+    }
+
+    
+}
+
+
 
 .keyin {
     color: brown;
@@ -408,7 +443,8 @@ padding-top: 30px;
     align-item: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    margin:20px 30px 0px 30px;
+    padding: 20px 0px 0px 0px;
+margin-right: 20px;
 }
 
 .checkbox {
@@ -438,14 +474,4 @@ padding-top: 30px;
     flex-direction: column;
     
 }*/
-
-.button-success,
-.button-error,
-.button-warning,
-.button-secondary {
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
 
