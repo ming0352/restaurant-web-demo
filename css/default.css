@@ -22,6 +22,9 @@
   .header {
     background-image: url("../images/Bitmap.png"); } }
 
+.footer {
+  font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif; }
+
 /*CSS中插入圖片*/
 /*圖片取代文字*/
 html, body, div, span, applet, object, iframe,
@@ -67,7 +70,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.header h1 a {
+.header > h1 a {
   background-image: url("../images/logo_w@svg.svg");
   width: 120px;
   height: 24px;
@@ -489,10 +492,179 @@ h6 {
   padding: 5px 15px 5px 15px;
   border-radius: 5px; }
 
-/*.keyin{
-    display: flex;
-    align-item: flex-start;
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background: #fdf5ec;
+  color: brown; }
+
+.about {
+  width: 100%;
+  margin-right: 50px; }
+
+.about span {
+  font-weight: bold;
+  font-size: 24px; }
+
+.contact {
+  width: 100%;
+  margin-right: 50px; }
+
+.contact ul {
+  list-style: disc; }
+
+.contact span {
+  font-weight: bold;
+  font-size: 24px; }
+
+.box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 40px 40px; }
+
+.logo-b a {
+  background-image: url("../images/logo_l@svg.svg");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 42px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-size: contain;
+  text-indent: -101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 50px; }
+
+.google {
+  background-image: url("../images/google_plus_logo.png");
+  text-indent: -101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.twitter {
+  background-image: url("../images/Twitter_NEW.png");
+  text-indent: -101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.facebook {
+  background-image: url("../images/fb.png");
+  text-indent: -101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 20px; }
+
+.box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 30px; }
+
+.social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .box1 {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    
-}*/
+    -ms-flex-line-pack: justify;
+    align-content: space-between; }
+  .about p + .contact p {
+    width: 760px; } }
+
+@media screen and (max-width: 414px) {
+  .about p + .contact p {
+    width: 400px; } }
+
+@media screen and (max-width: 375px) {
+  .about p + .contact p {
+    width: 370px; } }
+
+@media screen and (max-width: 320px) {
+  .about p + .contact p {
+    width: 300px; } }

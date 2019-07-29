@@ -4,7 +4,7 @@
 
 @include reset;
 
-.header h1 a {
+.header>h1 a {
     background-image: url('../images/logo_w@svg.svg');
     width: 120px;
     height: 24px;
@@ -393,6 +393,7 @@ h6 {
 .location iframe {
     margin: 0px 30px 10px 30px;
 }
+
 .input {
     width: 400px;
 }
@@ -401,16 +402,17 @@ h6 {
     .loc {
         flex-wrap: wrap;
     }
-.input {
-    width: 350px;
-}
-    
+
+    .input {
+        width: 350px;
+    }
+
 }
 
 
 
 @media screen and (max-width: 413px) {
-    
+
 
     .input {
         width: 300px;
@@ -422,7 +424,7 @@ h6 {
         width: 280px;
     }
 
-    
+
 
 
 }
@@ -432,7 +434,7 @@ h6 {
         width: 250px;
     }
 
-    
+
 }
 
 
@@ -444,7 +446,7 @@ h6 {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 20px 0px 0px 0px;
-margin-right: 20px;
+    margin-right: 20px;
 }
 
 .checkbox {
@@ -465,13 +467,140 @@ margin-right: 20px;
     padding: 5px 15px 5px 15px;
     border-radius: 5px;
 }
+.footer{
+    display: flex;;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #fdf5ec;
+    color: brown;
+}
 
+.about{
+    width: 100%;
+margin-right: 50px;
 
-/*.keyin{
+}
+.about span{
+    font-weight: bold;
+    font-size: 24px;
+}
+.contact{
+    width: 100%;
+margin-right: 50px;
+
+}
+.contact ul {
+    list-style: disc;
+}
+
+.contact span{
+    font-weight: bold;
+     font-size: 24px;
+}
+.box1{
     display: flex;
-    align-item: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: flex-start;
+    margin: 40px 40px;
+}
+.box1 span{
     
-}*/
+}
+.logo-b a{
+    background-image: url('../images/logo_l@svg.svg');
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 42px;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-size: contain;
+    text-indent: -101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+.google{
+    background-image: url('../images/google_plus_logo.png');
+    text-indent: -101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.twitter{
+    background-image: url('../images/Twitter_NEW.png');
+    text-indent: -101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.facebook{
+    background-image: url('../images/fb.png');
+    text-indent: -101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.box2{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    margin: 30px;
+}
+.social{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-between;
+    
 
+}
+@media screen and(max-width: 768px){
+    .footer{
+        flex-wrap: wrap;
+    }
+    .box1{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+
+    }
+    .about p + .contact p{
+        width: 760px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .about p + .contact p{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .about p + .contact p{
+        width: 370px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about p + .contact p{
+        width: 300px;
+    }
+}
