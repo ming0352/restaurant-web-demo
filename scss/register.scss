@@ -36,6 +36,13 @@ margin-right: 20%;
 padding: 40px 40px;
 }
 
+.match-icon{
+	border-radius: 50%;
+	display: none;
+}
+.match-icon.active{
+	display: block;
+}
 .terms{
 	width: 50%;
 }
