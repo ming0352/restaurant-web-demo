@@ -1,0 +1,229 @@
+@import "default-layout";
+@import "grid";
+
+.main-content {
+    display: flex;
+    align-item: flex-start;
+
+}
+
+.sidebar {
+    width: 12%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 10px 10px 30px;
+    background-color: #f8f5f4;
+
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    li:hover {
+        background: brown;
+
+    }
+
+    li {
+        padding: 10px 10px;
+        border-bottom: 1px solid brown;
+        background-color: #f8f5f4;
+    }
+
+    h3 {
+        padding: 10px 10px;
+    }
+
+    @include ipad {
+        display: none;
+    }
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    background-color: #f8f5f4;
+
+    @include ipad {
+        width: 100%;
+    }
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        width: 300px;
+        height: 24px;
+        border-radius: 5px;
+@include iphone{
+	margin-bottom: 15px;
+}
+        @include iphone5 {
+            width: 250px;
+        }
+    }
+
+    .search {
+        border-radius: 5px;
+    }
+
+    form {
+        margin: 15px 15px 15px 35px;
+    }
+
+    @include ipad {
+        flex-wrap: wrap;
+    }
+}
+.mobile-menu{
+	display: none;
+	@include ipad{
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		.list{
+			display: flex;
+			align-content:center; 
+		}
+        h3{
+        	padding: 10px 10px;
+        	font-weight: bolder;
+        	color: brown;
+        }
+        li{
+        	border: 1px solid orange;
+        	padding: 10px 10px;
+        	font-weight: bolder;
+        	border-radius: 30px;
+        }
+        li:hover{
+        	background-color: brown;
+        }
+        a{
+        	color: brown;
+        	text-decoration: none;
+        }
+        a:hover{
+        	color: white;
+        }
+    
+	}
+}
+.buy {
+    a {
+        margin-right: 10px;
+        text-decoration: none;
+
+        padding: 5px 5px;
+
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 15px 15px 15px 15px;
+    }
+
+    li {
+        padding: 10px 10px;
+        border: 1px solid brown;
+        margin-right: 10px;
+        border-radius: 6px;
+        display: block;
+    }
+
+    li:hover {
+        background-color: brown;
+
+        font-weight: bolder;
+    }
+
+
+
+}
+
+.product {
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        @include ipad {
+            justify-content: center;
+        }
+    }
+
+    li {
+        text-align: center;
+        margin: 20px 20px;
+
+        @include iphone5 {
+
+            padding-right: 30px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+
+h4 {
+    font-size: 24px;
+}
+
+.product-1,
+.product-2,
+.product-3,
+.product-4 {
+    img {
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    button {
+        border: 1px solid orange;
+        padding: 15px 65px;
+        background-color: #f8f5f4;
+        color: orange;
+        border-radius: 10px;
+    }
+
+    .price {
+
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .underLine {
+        border-bottom: 1px solid brown;
+        padding-bottom: 20px;
+    }
+}

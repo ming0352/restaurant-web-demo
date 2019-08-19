@@ -47,7 +47,8 @@ table {
 .wrap {
   max-width: 100%;
   margin: 0 auto;
-  font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif; }
+  font-family: "Microsoft JhengHei", Times, Baskerville, Georgia, serif;
+  margin-top: -22px; }
 
 .header {
   background-image: url("../images/header_desktop.png");
@@ -55,14 +56,17 @@ table {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative;
-  margin-top: -30px; }
+  position: relative; }
 
 @media screen and (max-width: 767px) {
   .header {
     background-image: url("../images/Bitmap.png"); } }
 
-.header > h1 a {
+.topbar {
+  background: rgba(0, 0, 0, 0.5);
+  height: 54px; }
+
+.topbar > h1 a {
   background-image: url("../images/logo_w@svg.svg");
   width: 120px;
   height: 24px;

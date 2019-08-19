@@ -1,0 +1,68 @@
+@import "default-layout";
+@import "grid";
+.wrap{
+
+}
+.header {
+    margin-top: -30px;
+    padding: 10px 20px;
+}
+.content{
+	padding-bottom: 30px;
+}
+h3,
+p,
+.keyin {
+    display: flex;
+    justify-content: center;
+}
+h3{
+	font-size: 36px;
+	color: brown;
+	font-weight: bolder;
+	padding-top: 20px;
+}
+
+.title p{
+	font-size: 24px;
+	color: brown;
+	font-weight: bolder;
+	margin-bottom: 20px
+}
+.input {
+    border-top: 3px solid orange;
+    padding: 50px 50px;
+    width: 50%;
+    box-shadow: 3px 3px 10px gray;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+   input{
+   	width: 400px;
+   	@include plus{
+   		width: 280px;
+   	}
+   	@include iphone{
+   		max-width: 250px;
+   	}
+   	@include iphone5{
+   		max-width: 220px;
+   	}
+   }
+   
+    p{
+    	font-size: 36px;
+    	font-weight: bolder;
+    	color: brown;
+    }
+}
+.btn{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+.contact p,.about p{
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}

@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /*CSS中插入圖片*/
 /*圖片取代文字*/
-/*CSS中插入圖片*/
-/*圖片取代文字*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,7 +62,7 @@ table {
     background-image: url("../images/Bitmap.png"); } }
 
 .topbar {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   height: 54px; }
 
 .topbar > h1 a {
@@ -116,7 +114,8 @@ table {
 
 @media screen and (max-width: 767px) {
   .bg h2 {
-    font-size: 24px; } }
+    font-size: 24px;
+    font-weight: bold; } }
 
 .question h2 {
   line-height: 30px;
@@ -346,3 +345,73 @@ table {
 @media screen and (max-width: 320px) {
   .about p + .contact p {
     width: 300px; } }
+
+.header {
+  margin-top: -30px;
+  padding: 10px 20px; }
+
+.content {
+  padding-bottom: 30px; }
+
+h3,
+p,
+.keyin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+h3 {
+  font-size: 36px;
+  color: brown;
+  font-weight: bolder;
+  padding-top: 20px; }
+
+.title p {
+  font-size: 24px;
+  color: brown;
+  font-weight: bolder;
+  margin-bottom: 20px; }
+
+.input {
+  border-top: 3px solid orange;
+  padding: 50px 50px;
+  width: 50%;
+  -webkit-box-shadow: 3px 3px 10px gray;
+  box-shadow: 3px 3px 10px gray;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto; }
+  .input input {
+    width: 400px; }
+    @media (max-width: 414px) {
+      .input input {
+        width: 280px; } }
+    @media (max-width: 375px) {
+      .input input {
+        max-width: 250px; } }
+    @media (max-width: 320px) {
+      .input input {
+        max-width: 220px; } }
+  .input p {
+    font-size: 36px;
+    font-weight: bolder;
+    color: brown; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 30px; }
+
+.contact p, .about p {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
