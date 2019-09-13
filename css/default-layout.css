@@ -114,7 +114,8 @@ table {
 
 @media screen and (max-width: 767px) {
   .bg h2 {
-    font-size: 24px; } }
+    font-size: 24px;
+    font-weight: bold; } }
 
 .question h2 {
   line-height: 30px;
@@ -147,7 +148,12 @@ table {
     top: 50px;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8); }
+    background: rgba(0, 0, 0, 0.8); } }
+  @media screen and (max-width: 767px) and (max-width: 414px) {
+    .menu {
+      top: 80px; } }
+
+@media screen and (max-width: 767px) {
   .menu li {
     border-bottom: 5px solid transparent; }
   .menu li a {
