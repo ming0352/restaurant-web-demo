@@ -18,17 +18,20 @@ $(document).ready(function() {
         event.preventDefault();
         /* Act on the event */
     });
-    $("#pas-ch,#pas").change(function(event) {
-        var word1 = $("#pas").val();
+    
+    $("#pas-ch").change(function(event) {
+       
         var word2 = $("#pas-ch").val();
+        var word1 = $("#pas").val();
 
-
-        if (word1 != word2) {
+        if ( word1 != word2) {
+            
             $('.match-icon').removeClass('active');
             alert("兩次密碼不一樣");
-        } else {
+        } else if(word1 == word2 ){
             $('.match-icon').addClass('active');
         }
+    
 
     });
     $("body").on("change", "#email", function() {
